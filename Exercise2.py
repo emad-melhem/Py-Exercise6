@@ -3,7 +3,7 @@ my_dict = {"fruit": "Apple", "vegetable": "Capsicum"}
 key= input("Enter a word to check it in the dictionary :")
 find_letter = False
 for x in my_dict.keys():
-    if key == x:
+    if key.lower() == x.lower():
         find_letter =True
         break
 if find_letter:
